@@ -12,7 +12,7 @@ inputs:
 outputs:
   answer:
     type: string
-    reference: ${chat.output}
+    reference: ${extract_result.output}
     is_chat_output: true
 nodes:
 - name: chat
@@ -33,4 +33,5 @@ nodes:
   source:
     type: code
     path: extract_result.py
-  inputs: {}
+  inputs:
+    input1: ${chat.output}
