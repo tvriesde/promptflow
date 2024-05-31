@@ -1,8 +1,0 @@
-tests:
-  - name: my_chatbot_default_20240523_094303_191000
-    display_name: my_chatbot_${variant_id}_${timestamp}
-    flow: /workspaces/promptflow/my_chatbot
-    data: /workspaces/promptflow/my_chatbot/new-chat-flow-created-at-2024-5-23/test_data.jsonl
-    column_mapping:
-      chat_history: []
-      question: <Please select a data input>
